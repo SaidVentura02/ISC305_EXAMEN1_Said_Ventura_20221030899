@@ -10,8 +10,8 @@
     <body>
 
     <!--------- Barra de navegación --------->
-        <nav>
-            <div>
+        <nav class="navbar navbar-expand-lg sticky-top py-2 bg-warning">
+            <div class="container">
                 <div><a href="#section-inicio">Inicio</a></div>
                 <div><a href="#section-catalogo">Catálogo</a></div>
                 <div><a href="#section-ofertas">Ofertas</a></div>
@@ -22,16 +22,16 @@
         </nav>
 
     <!--------- Header --------->
-        <header>
-            <div>
+        <header class="py-2 bg-dark text-white">
+            <div class="container">
                 <h3>Horarios de atención : Lunes a Domingo 7am - 6pm</h3>
             </div>
         </header>
 
         <main>
     <!--------- Sección de inicio --------->
-            <section id="section-inicio">
-                <div>
+            <section class="py-4" id="section-inicio">
+                <div class="container">
                     <div>
                         <h2>Quienes Somos?</h2>
                         <p>
@@ -43,8 +43,8 @@
             </section>
 
     <!--------- Sección del catálogo --------->
-            <section id="section-catalogo">
-                <div>
+            <section class="py-4" id="section-catalogo">
+                <div class="container">
                     <div>
                         <h2>Catálogo de Productos</h2>
                     </div>
@@ -175,8 +175,8 @@
             </section>
 
     <!--------- Sección de ofertas --------->
-            <section id="section-ofertas">
-                <div>
+            <section class="py-4" id="section-ofertas">
+                <div class="container">
                     <div>
                         <h2>Ofertas del Día</h2>
                     </div>
@@ -188,7 +188,7 @@
                             </div>
                             <h3>Cable THHN-2 Awg negro(100m)</h3>
                             <img src="./recursos/Cable_THHN2_Awg_negro.jfif" alt="Imagen cable thhn-6 awg negro">
-                            <p>Precio: Lps.17,712.40</p>
+                            <p class="text-decoration-line-through">Precio: Lps.17,712.40</p>
                             <p>Precio de oferta: Lps.13,284.30</p>
                         </div>
 
@@ -198,7 +198,7 @@
                             </div>
                             <h3>Panel Solar PEIMAR</h3>
                             <img src="./recursos/Panel_Solar_PEIMAR.jfif" alt="Imagen panel solar peimar">
-                            <p>Precio: Lps.3,690.21</p>
+                            <p class="text-decoration-line-through">Precio: Lps.3,690.21</p>
                             <p>Precio de oferta: Lps.2,214.12</p>
                         </div>
 
@@ -208,7 +208,7 @@
                             </div>
                             <h3>Transformador de corriente 200A</h3>
                             <img src="./recursos/Transformador_corriente_200A.png" alt="Imagen transformador de corriente">
-                            <p>Precio: Lps.664.06</p>
+                            <p class="text-decoration-line-through">Precio: Lps.664.06</p>
                             <p>Precio de oferta: Lps.332.03</p>
                         </div>
 
@@ -218,7 +218,7 @@
                             </div>
                             <h3>SYLVANIA Bombillo LED A60</h3>
                             <img src="./recursos/SYLVANIA_Bombillo_LED_A60.jfif" alt="Imagen Bombillo led a60">
-                            <p>Precio: Lps.474.75</p>
+                            <p class="text-decoration-line-through">Precio: Lps.474.75</p>
                             <p>Precio de oferta: Lps.213.30</p>
                         </div>
 
@@ -227,12 +227,12 @@
             </section>
 
     <!--------- Sección de cotización --------->
-            <section id="section-cotizacion">
-                <div>
+            <section class="py-4" id="section-cotizacion">
+                <div class="container border">
                     <div>
                         <h2>Realice Cotizaciones de Nuestros Productos</h2>
                     </div>
-                    <form>
+                    <form action="#" method="post" enctype="multipart/form-data">
                         <div>
                             <div>
                                 <label>Cantidad de unidades:</label>
@@ -240,7 +240,7 @@
                             </div>
                             <div>
                                 <label>Indique el producto deseado:</label>
-                                <select id="input-product" name="nombreProducto" required>
+                                <select class="form-select" id="input-product" name="nombreProducto" required>
                                     <option>Banco de capacitores 600kvar - Lps.464,200.00</option>
                                     <option>Generador de electricidad 9200W - Lps.28,168.50</option>
                                     <option>Panel solar Amerisolar - Lps.3,590.43</option>
@@ -250,44 +250,45 @@
                             </div>
                             <div>
                                 <label>Indique la ciudad de entrega:</label>
-                                <select id="input-ciudad" name="nombreCiudad" required>
+                                <select class="form-select" id="input-ciudad" name="nombreCiudad" required>
                                     <option>Tegucigalpa - Costo: Lps.1,200.00</option>
                                     <option>San Pedro Sula - Costo: Lps.500.00</option>
                                     <option>Otras regiones del país - Costo: Lps.2000.00</option>
                                 </select>
                             </div>
                             <div>
-                                <button type="button">Calcular Presupuesto</button>
+                                <button type="button" class="btn btn-sm btn-primary m-3" data-bs-toggle="modal" data-bs-target="#modal-calculo-cotizacion">Calcular Presupuesto</button>
                             </div>
                         </div>
-                        <span>Se aplica descuento del 8% en órdenes de 5 o más unidades.</span>
+                        <span class="badge rounded-pill bg-success mb-2">Se aplica descuento del 8% en órdenes de 5 o más unidades.</span>
                     </form>
                 </div>
             </section>
 
     <!--------- Modal de la calculadora de pago --------->
-            <div>
-                <div>
-                    <div>
-                        <div>
-                            <h4>Cotización de Producto</h4>
+            <div class="modal fade" id="modal-calculo-cotizacion" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content rounded-3 border-0 shadow-lg">
+                        <div class="modal-header bg-primary text-light">
+                            <h4 class="modal-title">Cotización de Producto</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div>
-                            <p>Valor total estimado de la cotización: Lps.XXXX</p>
+                        <div class="modal-body p-5">
+                            <p>Valor total estimado de la cotización: Lps.000.00</p>
                         </div>
                     </div>
                 </div>
             </div>
 
     <!--------- Sección de tabla comparativa --------->
-            <section id="section-tabla">
-                <div>
+            <section class="py-4" id="section-tabla">
+                <div class="container">
                     <div>
-                        <h2>Compare Nuestros Productos</h2>
+                        <h2 class="align-items-center">Compare Nuestros Productos</h2>
                     </div>
-                    <div>
-                        <table border="1">
-                            <thead>
+                    <div class="table-responsive">
+                        <table class="table table-hover table-striped">
+                            <thead class="table-dark">
                                 <tr>
                                     <th>Código</th>
                                     <th>Equipo industrial</th>
@@ -304,7 +305,7 @@
                                     <td>600V</td>
                                     <td>115A</td>
                                     <td>UL-83</td>
-                                    <td><span>Aprobado</span></td>
+                                    <td><span class="badge rounded-pill bg-success">Aprobado</span></td>
                                 </tr>
                                 <tr>
                                     <td>CAB.01.139</td>
@@ -312,7 +313,7 @@
                                     <td>600V</td>
                                     <td>65A</td>
                                     <td>UL-83</td>
-                                    <td><span>Aprobado</span></td>
+                                    <td><span class="badge rounded-pill bg-success">Aprobado</span></td>
                                 </tr>
                                 <tr>
                                     <td>CAB.01.159</td>
@@ -320,7 +321,7 @@
                                     <td>600V</td>
                                     <td>50A</td>
                                     <td>UL-83</td>
-                                    <td><span>Aprobado</span></td>
+                                    <td><span class="badge rounded-pill bg-success">Aprobado</span></td>
                                 </tr>
                                 <tr>
                                     <td>CAB.01.070</td>
@@ -328,7 +329,7 @@
                                     <td>600V</td>
                                     <td>20A</td>
                                     <td>UL-83</td>
-                                    <td><span>Aprobado</span></td>
+                                    <td><span class="badge rounded-pill bg-success">Aprobado</span></td>
                                 </tr>
                                 <tr>
                                     <td>CAB.01.084</td>
@@ -336,7 +337,7 @@
                                     <td>600V</td>
                                     <td>15A</td>
                                     <td>UL-83</td>
-                                    <td><span>Aprobado</span></td>
+                                    <td><span class="badge rounded-pill bg-success">Aprobado</span></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -345,32 +346,32 @@
             </section>
 
     <!--------- Sección de licitación --------->
-            <section id="section-licitacion">
-                <div>
+            <section class="py-4" id="section-licitacion">
+                <div class="container border">
                     <div>
                         <h2>Requisitos Licitacion</h2>
                     </div>
-                    <form>
+                    <form action="#" method="post" enctype="multipart/form-data">
                         <div>
                             <div>
                                 <label>Contratista o empresa solicitante:</label>
-                                <input type="text" id="input-solicitante" name="nombreSolicitante" required>
+                                <input class="form-control" type="text" id="input-solicitante" name="nombreSolicitante" required>
                             </div>
                             <div>
                                 <label>RTN:</label>
-                                <input type="text" id="input-rtn" name="rtnSolicitante" minlength="14" maxlength="14" required placeholder="xxxxxxxxxxxxxx">
+                                <input class="form-control" type="text" id="input-rtn" name="rtnSolicitante" minlength="14" maxlength="14" required placeholder="xxxxxxxxxxxxxx">
                             </div>
                             <div>
                                 <label>Correo electrónico corporativo:</label>
-                                <input type="email" id="input-correo" name="correoSolicitante" required placeholder="ejemplo@correo.com">
+                                <input class="form-control" type="email" id="input-correo" name="correoSolicitante" required placeholder="ejemplo@correo.com">
                             </div>
                             <div>
                                 <label>Número teléfonico:</label>
-                                <input type="text" id="input-telefono" name="telefonoSolicitante" minlength="9" maxlength="9" required placeholder="xxxx-xxxx" pattern="[0-9]{4}-[0-9]{4}">
+                                <input class="form-control" type="text" id="input-telefono" name="telefonoSolicitante" minlength="9" maxlength="9" required placeholder="xxxx-xxxx" pattern="[0-9]{4}-[0-9]{4}">
                             </div>
                             <div>
                                 <label>Departamento de entrega:</label>
-                                <select id="input-departamento" name="nombreDepartamento" required>
+                                <select class="form-select" id="input-departamento" name="nombreDepartamento" required>
                                     <option>Cortés</option>
                                     <option>Francisco Morazán</option>
                                     <option>Comayagua</option>
@@ -378,15 +379,15 @@
                                     <option>Olancho</option>
                                 </select>
                             </div>
-                            <div>
-                                <input type="checkbox" id="input-condiciones" name="terminosCondiciones" required>
-                                <label>Acepto los términos y condiciones de la garantía</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="input-condiciones" name="terminosCondiciones" required>
+                                <label class="form-check-label">Acepto los términos y condiciones de la garantía</label>
                             </div>
                             <div>
-                                <button type="button">Enviar cotización</button>
+                                <button class="btn btn-primary" type="button">Enviar cotización</button>
                             </div>
                             <div>
-                                <button type="button">Limpiar formulario</button>
+                                <button class="btn btn-danger" type="button">Limpiar formulario</button>
                             </div>
                         </div>
                     </form>
@@ -395,8 +396,8 @@
         </main>
 
     <!--------- Footer --------->
-        <footer>
-            <div id="section-contacto">
+        <footer class="bg-dark text-light mt-auto py-4">
+            <div class="container" id="section-contacto">
                 <div>
                     <div>
                         <p>Blv. Suyapa, Tegucigalpa - Tel: xxxx-xxxx</p>
