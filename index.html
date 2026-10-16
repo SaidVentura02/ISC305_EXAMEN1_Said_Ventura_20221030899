@@ -10,14 +10,20 @@
     <body>
 
     <!--------- Barra de navegación --------->
+
         <nav class="navbar navbar-expand-lg sticky-top py-2 bg-warning">
-            <div class="container">
-                <div><a href="#section-inicio">Inicio</a></div>
-                <div><a href="#section-catalogo">Catálogo</a></div>
-                <div><a href="#section-ofertas">Ofertas</a></div>
-                <div><a href="#section-cotizacion">Cotizaciones</a></div>
-                <div><a href="#section-contacto">Contacto</a></div>
-                <div><div>Cotizar por WhatsApp</div></div>
+            <button class="navbar-toggler m-3" type="button" data-bs-toggle="collapse" data-bs-target="#menu-expandible" aria-controls="menu-expandible" aria-expanded="false" aria-label="Expandir menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse fw-bold px-2" id="menu-expandible">
+                <ul class="navbar-nav">
+                    <li><a class="nav-link px-3" href="#section-inicio">Inicio</a></li>
+                    <li><a class="nav-link px-3" href="#section-catalogo">Catálogo</a></li>
+                    <li><a class="nav-link px-3" href="#section-ofertas">Ofertas</a></li>
+                    <li><a class="nav-link px-3" href="#section-cotizacion">Cotizaciones</a></li>
+                    <li><a class="nav-link px-3" href="#section-contacto">Contacto</a></li>
+                    <li><a class="btn btn-success">Cotizar por WhatsApp</a></li>
+                </ul>
             </div>
         </nav>
 
@@ -30,7 +36,7 @@
 
         <main>
     <!--------- Sección de inicio --------->
-            <section class="py-4" id="section-inicio">
+            <section class="py-4 border-top bg-light" id="section-inicio">
                 <div class="container">
                     <div>
                         <h2>Quienes Somos?</h2>
@@ -43,191 +49,210 @@
             </section>
 
     <!--------- Sección del catálogo --------->
-            <section class="py-4" id="section-catalogo">
+            <section class="py-4 border-top bg-white" id="section-catalogo">
                 <div class="container">
                     <div>
                         <h2>Catálogo de Productos</h2>
                     </div>
-                    <div>
-
-                        <div>
-                            <h3>Banco de capacitores 600kvar</h3>
-                            <img class="img-fluid" src="./recursos/Banco_de_capacitores_600kVAr.jfif" alt="Imagen banco capacitores 600">
-                            <p>Categoría: Equipo de alta tensión</p>
-                            <p>Precio: Lps.464,200.00</p>
-                            <p>Detalles: </p>
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="card">
+                                <h3>Banco de capacitores 600kvar</h3>
+                                <img src="./recursos/Banco_de_capacitores_600kVAr.jfif" alt="Imagen banco capacitores 600">
+                                <p>Categoría: Equipo de alta tensión</p>
+                                <p>Precio: Lps.464,200.00</p>
+                                <p>Detalles: </p>
+                            </div>
                         </div>
-
-                        <div>
-                            <h3>Generador de electricidad 9200W</h3>
-                            <img src="./recursos/Generador_de_electricidad_a_gasolina_9200.jfif" alt="Imagen generador electrico">
-                            <p>Categoría: Generadores</p>
-                            <p>Precio: Lps.28,168.50</p>
-                            <p>Detalles: </p>
+                        
+                        <div class="col-3">
+                            <div class="card">
+                                <h3>Generador de electricidad 9200W</h3>
+                                <img src="./recursos/Generador_de_electricidad_a_gasolina_9200.jfif" alt="Imagen generador electrico">
+                                <p>Categoría: Generadores</p>
+                                <p>Precio: Lps.28,168.50</p>
+                                <p>Detalles: </p>
+                            </div>
                         </div>
-
-                        <div>
-                            <h3>Panel solar Amerisolar</h3>
-                            <img src="./recursos/Panel_Solar_Amerisolar_Policristalino_340W.png" alt="Imagen panel solar Amerisolar">
-                            <p>Categoría: Energía solar</p>
-                            <p>Precio: Lps.3,590.43</p>
-                            <p>Detalles: </p>
+                        <div class="col-3">
+                            <div class="card">
+                                <h3>Panel solar Amerisolar</h3>
+                                <img src="./recursos/Panel_Solar_Amerisolar_Policristalino_340W.png" alt="Imagen panel solar Amerisolar">
+                                <p>Categoría: Energía solar</p>
+                                <p>Precio: Lps.3,590.43</p>
+                                <p>Detalles: </p>
+                            </div>
                         </div>
-
-                        <div>
-                            <h3>Fusible media tensión GXQSJ</h3>
-                            <img src="./recursos/Fusible_media_tensión_GXQSJ.jfif" alt="Imagen fusible media tension GXQSJ">
-                            <p>Categoría: Equipo de alta tensión</p>
-                            <p>Precio: Lps.23,210.00</p>
-                            <p>Detalles: </p>
+                        <div class="col-3">
+                            <div class="card">
+                                <h3>Fusible media tensión GXQSJ</h3>
+                                <img src="./recursos/Fusible_media_tensión_GXQSJ.jfif" alt="Imagen fusible media tension GXQSJ">
+                                <p>Categoría: Equipo de alta tensión</p>
+                                <p>Precio: Lps.23,210.00</p>
+                                <p>Detalles: </p>
+                            </div>
                         </div>
-
-                        <div>
-                            <h3>Tubo LED Sylvania T8</h3>
-                            <img src="./recursos/SYLVANIA_Tubo_LED_T8.jfif" alt="Imagen tubo led sylvania t8">
-                            <p>Categoría: Iluminación</p>
-                            <p>Precio: Lps.70.69</p>
-                            <p>Detalles: </p>
+                        <div class="col-3">
+                            <div class="card">
+                                <h3>Tubo LED Sylvania T8</h3>
+                                <img src="./recursos/SYLVANIA_Tubo_LED_T8.jfif" alt="Imagen tubo led sylvania t8">
+                                <p>Categoría: Iluminación</p>
+                                <p>Precio: Lps.70.69</p>
+                                <p>Detalles: </p>
+                            </div>
                         </div>
-
-                        <div>
-                            <h3>Panel Solar PEIMAR</h3>
-                            <img src="./recursos/Panel_Solar_PEIMAR.jfif" alt="Imagen panel solar peimar">
-                            <p>Categoría: Energía solar</p>
-                            <p>Precio: Lps.3,690.21</p>
-                            <p>Detalles: </p>
+                        <div class="col-3">
+                            <div class="card">
+                                <h3>Panel Solar PEIMAR</h3>
+                                <img src="./recursos/Panel_Solar_PEIMAR.jfif" alt="Imagen panel solar peimar">
+                                <p>Categoría: Energía solar</p>
+                                <p>Precio: Lps.3,690.21</p>
+                                <p>Detalles: </p>
+                            </div>
                         </div>
-
-                        <div>
-                            <h3>SYLVANIA Bombillo LED A60</h3>
-                            <img src="./recursos/SYLVANIA_Bombillo_LED_A60.jfif" alt="Imagen Bombillo led a60">
-                            <p>Categoría: Iluminación</p>
-                            <p>Precio: Lps.474.75</p>
-                            <p>Detalles: </p>
+                        <div class="col-3">
+                            <div class="card">
+                                <h3>SYLVANIA Bombillo LED A60</h3>
+                                <img src="./recursos/SYLVANIA_Bombillo_LED_A60.jfif" alt="Imagen Bombillo led a60">
+                                <p>Categoría: Iluminación</p>
+                                <p>Precio: Lps.474.75</p>
+                                <p>Detalles: </p>
+                            </div>
                         </div>
-
-                        <div>
-                            <h3>SURTEK Centro de carga</h3>
-                            <img src="./recursos/SURTEK_Centro_de_carga.jfif" alt="Imagen centro de carga surtek">
-                            <p>Categoría: Distribución</p>
-                            <p>Precio: Lps.332.33</p>
-                            <p>Detalles: </p>
+                        <div class="col-3">
+                            <div class="card">
+                                <h3>SURTEK Centro de carga</h3>
+                                <img src="./recursos/SURTEK_Centro_de_carga.jfif" alt="Imagen centro de carga surtek">
+                                <p>Categoría: Distribución</p>
+                                <p>Precio: Lps.332.33</p>
+                                <p>Detalles: </p>
+                            </div>
                         </div>
-
-                        <div>
-                            <h3>Breaker termomagnético riel DIN S202</h3>
-                            <img src="./recursos/Breaker_termomagnético_riel_DIN_S202.jfif" alt="Imagen breaker termomagnetico">
-                            <p>Categoría: Distribución</p>
-                            <p>Precio: Lps.379.80</p>
-                            <p>Detalles: </p>
+                        <div class="col-3">
+                            <div class="card">
+                                <h3>Breaker termomagnético riel DIN S202</h3>
+                                <img src="./recursos/Breaker_termomagnético_riel_DIN_S202.jfif" alt="Imagen breaker termomagnetico">
+                                <p>Categoría: Distribución</p>
+                                <p>Precio: Lps.379.80</p>
+                                <p>Detalles: </p>
+                            </div>
                         </div>
-
-                        <div>
-                            <h3>Fusible alta tensión 65A tipo T</h3>
-                            <img src="./recursos/Fusible_alta_tensión_65A_tipo_T.jfif" alt="Imagen fusible alta tension 65A T">
-                            <p>Categoría: Equipo de alta tensión</p>
-                            <p>Precio: Lps.71.74</p>
-                            <p>Detalles: </p>
+                        <div class="col-3">
+                            <div class="card">
+                                <h3>Fusible alta tensión 65A tipo T</h3>
+                                <img src="./recursos/Fusible_alta_tensión_65A_tipo_T.jfif" alt="Imagen fusible alta tension 65A T">
+                                <p>Categoría: Equipo de alta tensión</p>
+                                <p>Precio: Lps.71.74</p>
+                                <p>Detalles: </p>
+                            </div>
                         </div>
-
-                        <div>
-                            <h3>Pararrayo 27Kv Cooper U.S.A Porcelana</h3>
-                            <img src="./recursos/Pararrayo_27Kv_Cooper_U.S.A_Porcelana.jfif" alt="Imagen Pararrayo cooper Porcelana">
-                            <p>Categoría: Equipo de alta tensión</p>
-                            <p>Precio: Lps.1,360.95</p>
-                            <p>Detalles: </p>
+                        <div class="col-3">
+                            <div class="card">
+                                <h3>Pararrayo 27Kv Cooper U.S.A Porcelana</h3>
+                                <img src="./recursos/Pararrayo_27Kv_Cooper_U.S.A_Porcelana.jfif" alt="Imagen Pararrayo cooper Porcelana">
+                                <p>Categoría: Equipo de alta tensión</p>
+                                <p>Precio: Lps.1,360.95</p>
+                                <p>Detalles: </p>
+                            </div>
                         </div>
-
-                        <div>
-                            <h3>Protector contra sobretensiones de CC para CORE1-US</h3>
-                            <img src="./recursos/Protecctor_sobretensiones_CC_CORE1-US.png" alt="Imagen protector contra tension CC">
-                            <p>Categoría: Energía solar</p>
-                            <p>Precio: Lps.3,700.39</p>
-                            <p>Detalles: </p>
+                        <div class="col-3">
+                            <div class="card">
+                                <h3>Protector contra sobretensiones de CC para CORE1-US</h3>
+                                <img src="./recursos/Protecctor_sobretensiones_CC_CORE1-US.png" alt="Imagen protector contra tension CC">
+                                <p>Categoría: Energía solar</p>
+                                <p>Precio: Lps.3,700.39</p>
+                                <p>Detalles: </p>
+                            </div>
                         </div>
-
-                        <div>
-                            <h3>Transformador de corriente 200A</h3>
-                            <img src="./recursos/Transformador_corriente_200A.png" alt="Imagen transformador de corriente">
-                            <p>Categoría: Energía solar</p>
-                            <p>Precio: Lps.664.06</p>
-                            <p>Detalles: </p>
+                        <div class="col-3">
+                            <div class="card">
+                                <h3>Transformador de corriente 200A</h3>
+                                <img src="./recursos/Transformador_corriente_200A.png" alt="Imagen transformador de corriente">
+                                <p>Categoría: Energía solar</p>
+                                <p>Precio: Lps.664.06</p>
+                                <p>Detalles: </p>
+                            </div>
                         </div>
-
-                        <div>
-                            <h3>Cable THHN-2 Awg negro(100m)</h3>
-                            <img src="./recursos/Cable_THHN2_Awg_negro.jfif" alt="Imagen cable thhn-2 awg negro">
-                            <p>Categoría: Cables </p>
-                            <p>Precio: Lps.17,712.40</p>
-                            <p>Detalles: </p>
+                        <div class="col-3">
+                            <div class="card">
+                                <h3>Cable THHN-2 Awg negro(100m)</h3>
+                                <img src="./recursos/Cable_THHN2_Awg_negro.jfif" alt="Imagen cable thhn-2 awg negro">
+                                <p>Categoría: Cables </p>
+                                <p>Precio: Lps.17,712.40</p>
+                                <p>Detalles: </p>
+                            </div>
                         </div>
-
-                        <div>
-                            <h3>Cable THHN-6 Awg verde(100m)</h3>
-                            <img src="./recursos/Cable_THHN6_Awg_verde.jfif" alt="Imagen cable thhn-6 awg verde">
-                            <p>Categoría: Cables</p>
-                            <p>Precio: Lps.7,596.00</p>
-                            <p>Detalles: </p>
+                        <div class="col-3">
+                            <div class="card">
+                                <h3>Cable THHN-6 Awg verde(100m)</h3>
+                                <img src="./recursos/Cable_THHN6_Awg_verde.jfif" alt="Imagen cable thhn-6 awg verde">
+                                <p>Categoría: Cables</p>
+                                <p>Precio: Lps.7,596.00</p>
+                                <p>Detalles: </p>
+                            </div>
                         </div>
-
+                        
                     </div>
                 </div>
             </section>
 
     <!--------- Sección de ofertas --------->
-            <section class="py-4" id="section-ofertas">
+            <section class="py-4 border-top bg-light" id="section-ofertas">
                 <div class="container">
                     <div>
                         <h2>Ofertas del Día</h2>
                     </div>
-                    <div>
-                    
-                        <div>
-                            <div>
-                                <p>Oferta</p>
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="card">
+                                <div>
+                                    <p class="badge rounded-pill bg-info">Oferta</p>
+                                </div>
+                                <h3>Cable THHN-2 Awg negro(100m)</h3>
+                                <img src="./recursos/Cable_THHN2_Awg_negro.jfif" alt="Imagen cable thhn-6 awg negro">
+                                <p class="text-decoration-line-through">Precio: Lps.17,712.40</p>
+                                <p>Precio de oferta: Lps.13,284.30</p>
                             </div>
-                            <h3>Cable THHN-2 Awg negro(100m)</h3>
-                            <img src="./recursos/Cable_THHN2_Awg_negro.jfif" alt="Imagen cable thhn-6 awg negro">
-                            <p class="text-decoration-line-through">Precio: Lps.17,712.40</p>
-                            <p>Precio de oferta: Lps.13,284.30</p>
                         </div>
-
-                        <div>
-                            <div>
-                                <p>Oferta</p>
+                        <div class="col-3">
+                            <div class="card">
+                                <div>
+                                    <p class="badge rounded-pill bg-info">Oferta</p>
+                                </div>
+                                <h3>Panel Solar PEIMAR</h3>
+                                <img src="./recursos/Panel_Solar_PEIMAR.jfif" alt="Imagen panel solar peimar">
+                                <p class="text-decoration-line-through">Precio: Lps.3,690.21</p>
+                                <p>Precio de oferta: Lps.2,214.12</p>
                             </div>
-                            <h3>Panel Solar PEIMAR</h3>
-                            <img src="./recursos/Panel_Solar_PEIMAR.jfif" alt="Imagen panel solar peimar">
-                            <p class="text-decoration-line-through">Precio: Lps.3,690.21</p>
-                            <p>Precio de oferta: Lps.2,214.12</p>
                         </div>
-
-                        <div>
-                            <div>
-                                <p>Liquidación</p>
+                        <div class="col-3">
+                            <div class="card">
+                                <div>
+                                    <p class="badge rounded-pill bg-warning">Liquidación</p>
+                                </div>
+                                <h3>Transformador de corriente 200A</h3>
+                                <img src="./recursos/Transformador_corriente_200A.png" alt="Imagen transformador de corriente">
+                                <p class="text-decoration-line-through">Precio: Lps.664.06</p>
+                                <p>Precio de oferta: Lps.332.03</p>
                             </div>
-                            <h3>Transformador de corriente 200A</h3>
-                            <img src="./recursos/Transformador_corriente_200A.png" alt="Imagen transformador de corriente">
-                            <p class="text-decoration-line-through">Precio: Lps.664.06</p>
-                            <p>Precio de oferta: Lps.332.03</p>
                         </div>
-
-                        <div>
-                            <div>
-                                <p>Liquidación</p>
+                        <div class="col-3">
+                            <div class="card">
+                                <div>
+                                    <p class="badge rounded-pill bg-warning">Liquidación</p>
+                                </div>
+                                <h3>SYLVANIA Bombillo LED A60</h3>
+                                <img src="./recursos/SYLVANIA_Bombillo_LED_A60.jfif" alt="Imagen Bombillo led a60">
+                                <p class="text-decoration-line-through">Precio: Lps.474.75</p>
+                                <p>Precio de oferta: Lps.213.30</p>
                             </div>
-                            <h3>SYLVANIA Bombillo LED A60</h3>
-                            <img src="./recursos/SYLVANIA_Bombillo_LED_A60.jfif" alt="Imagen Bombillo led a60">
-                            <p class="text-decoration-line-through">Precio: Lps.474.75</p>
-                            <p>Precio de oferta: Lps.213.30</p>
                         </div>
-
                     </div>
                 </div>
             </section>
 
     <!--------- Sección de cotización --------->
-            <section class="py-4" id="section-cotizacion">
+            <section class="py-4 border-top bg-white" id="section-cotizacion">
                 <div class="container border">
                     <div>
                         <h2>Realice Cotizaciones de Nuestros Productos</h2>
@@ -281,7 +306,7 @@
             </div>
 
     <!--------- Sección de tabla comparativa --------->
-            <section class="py-4" id="section-tabla">
+            <section class="py-4 border-top bg-light" id="section-tabla">
                 <div class="container">
                     <div>
                         <h2 class="align-items-center">Compare Nuestros Productos</h2>
@@ -346,7 +371,7 @@
             </section>
 
     <!--------- Sección de licitación --------->
-            <section class="py-4" id="section-licitacion">
+            <section class="py-4 border-top bg-white" id="section-licitacion">
                 <div class="container border">
                     <div>
                         <h2>Requisitos Licitacion</h2>
@@ -383,11 +408,13 @@
                                 <input class="form-check-input" type="checkbox" id="input-condiciones" name="terminosCondiciones" required>
                                 <label class="form-check-label">Acepto los términos y condiciones de la garantía</label>
                             </div>
-                            <div>
-                                <button class="btn btn-primary" type="button">Enviar cotización</button>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                <button class="btn btn-primary m-2" type="button">Enviar cotización</button>
                             </div>
                             <div>
-                                <button class="btn btn-danger" type="button">Limpiar formulario</button>
+                                <button class="btn btn-danger m-2" type="button">Limpiar formulario</button>
+                            </div>
                             </div>
                         </div>
                     </form>
