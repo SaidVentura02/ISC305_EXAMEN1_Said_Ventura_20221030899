@@ -4,9 +4,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=width-device initial-scale=1.0">
         <title>DEINSA</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     </head>
     <body>
-
         <nav>
             <div>
                 <div><a href="#section-inicio">Inicio</a></div>
@@ -17,6 +18,7 @@
                 <div><div>Cotizar por WhatsApp</div></div>
             </div>
         </nav>
+
         <header>
             <div>
                 <h3>Horarios de atención : Lunes a Domingo 7am - 6pm</h3>
@@ -40,12 +42,12 @@
             <section id="section-catalogo">
                 <div>
                     <div>
-                        <h2>Catálog0 de Productos</h2>
+                        <h2>Catálogo de Productos</h2>
                     </div>
                     <div>
 
                         <div>
-                            <h3>Producto</h3>
+                            <h3>Banco de capacitores 600kvar</h3>
                             <img src="#" alt="">
                             <p>Categoría: </p>
                             <p>Precio: </p>
@@ -53,7 +55,7 @@
                         </div>
 
                         <div>
-                            <h3>Producto</h3>
+                            <h3>Generador de electricidad 9200W</h3>
                             <img src="#" alt="">
                             <p>Categoría: </p>
                             <p>Precio: </p>
@@ -61,7 +63,7 @@
                         </div>
 
                         <div>
-                            <h3>Producto</h3>
+                            <h3>Panel solar Amerisolar</h3>
                             <img src="#" alt="">
                             <p>Categoría: </p>
                             <p>Precio: </p>
@@ -69,7 +71,7 @@
                         </div>
 
                         <div>
-                            <h3>Producto</h3>
+                            <h3>Fusible media tensión GXQSJ</h3>
                             <img src="#" alt="">
                             <p>Categoría: </p>
                             <p>Precio: </p>
@@ -77,7 +79,7 @@
                         </div>
 
                         <div>
-                            <h3>Producto</h3>
+                            <h3>Tubo LED Sylvania T8</h3>
                             <img src="#" alt="">
                             <p>Categoría: </p>
                             <p>Precio: </p>
@@ -217,13 +219,157 @@
 
                     </div>
                 </div>
-                
             </section>
 
             <section id="section-cotizacion">
-                
+                <div>
+                    <div>
+                        <h2>Realice Cotizaciones de Nuestros Productos</h2>
+                    </div>
+                    <form>
+                        <div>
+                            <div>
+                                <label>Cantidad de unidades:</label>
+                                <input type="number" id="input-cantidad" name="cantidadProducto" min="0" required>
+                            </div>
+                            <div>
+                                <label>Indique el producto deseado:</label>
+                                <select id="input-product" name="nombreProducto" required>
+                                    <option>Banco de capacitores 600kvar - Lps.464,200.00</option>
+                                    <option>Generador de electricidad 9200W - Lps.28,168.50</option>
+                                    <option>Panel solar Amerisolar - Lps.3,590.43</option>
+                                    <option>Fusible media tensión GXQSJ - Lps.23,210.00</option>
+                                    <option>Tubo LED Sylvania T8 - Lps.70.69</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label>Indique la ciudad de entrega:</label>
+                                <select id="input-ciudad" name="nombreCiudad" required>
+                                    <option>Tegucigalpa - Costo: Lps.1,200.00</option>
+                                    <option>San Pedro Sula - Costo: Lps.500.00</option>
+                                    <option>Otras regiones del país - Costo: Lps.2000.00</option>
+                                </select>
+                            </div>
+                            <div>
+                                <button type="button">Calcular Presupuesto</button>
+                            </div>
+                        </div>
+                        <span>Se aplica descuento del 8% en órdenes de 5 o más unidades.</span>
+                    </form>
+                </div>
             </section>
 
+            <section id="section-tabla">
+                <div>
+                    <div>
+                        <h2>Compare Nuestros Productos</h2>
+                    </div>
+                    <div>
+                        <table border="1">
+                            <thead>
+                                <tr>
+                                    <th>Código</th>
+                                    <th>Equipo industrial</th>
+                                    <th>Tensión nominal</th>
+                                    <th>Capacidad</th>
+                                    <th>Norma técnica</th>
+                                    <th>Estado de homologación</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>CAB.01.099</td>
+                                    <td>Cable THHN-2 Awg verde(100m)</td>
+                                    <td>600V</td>
+                                    <td>115A</td>
+                                    <td>UL-83</td>
+                                    <td><span>Aprobado</span></td>
+                                </tr>
+                                <tr>
+                                    <td>CAB.01.139</td>
+                                    <td>Cable THHN-6 Awg verde(100m)</td>
+                                    <td>600V</td>
+                                    <td>65A</td>
+                                    <td>UL-83</td>
+                                    <td><span>Aprobado</span></td>
+                                </tr>
+                                <tr>
+                                    <td>CAB.01.159</td>
+                                    <td>Cable THHN-8 Awg verde(100m)</td>
+                                    <td>600V</td>
+                                    <td>50A</td>
+                                    <td>UL-83</td>
+                                    <td><span>Aprobado</span></td>
+                                </tr>
+                                <tr>
+                                    <td>CAB.01.070</td>
+                                    <td>Cable THHN-12 Awg verde(100m)</td>
+                                    <td>600V</td>
+                                    <td>20A</td>
+                                    <td>UL-83</td>
+                                    <td><span>Aprobado</span></td>
+                                </tr>
+                                <tr>
+                                    <td>CAB.01.084</td>
+                                    <td>Cable THHN-14 Awg verde(100m)</td>
+                                    <td>600V</td>
+                                    <td>15A</td>
+                                    <td>UL-83</td>
+                                    <td><span>Aprobado</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section-licitacion">
+                <div>
+                    <div>
+                        <h2>Requisitos Licitacion</h2>
+                    </div>
+                    <form>
+                        <div>
+                            <div>
+                                <label>Contratista o empresa solicitante:</label>
+                                <input type="text" id="input-solicitante" name="nombreSolicitante" required>
+                            </div>
+                            <div>
+                                <label>RTN:</label>
+                                <input type="text" id="input-rtn" name="rtnSolicitante" minlength="14" maxlength="14" required placeholder="xxxxxxxxxxxxxx">
+                            </div>
+                            <div>
+                                <label>Correo electrónico corporativo:</label>
+                                <input type="email" id="input-correo" name="correoSolicitante" required placeholder="ejemplo@correo.com">
+                            </div>
+                            <div>
+                                <label>Número teléfonico:</label>
+                                <input type="text" id="input-telefono" name="telefonoSolicitante" minlength="9" maxlength="9" required placeholder="xxxx-xxxx" pattern="[0-9]{4}-[0-9]{4}">
+                            </div>
+                            <div>
+                                <label>Departamento de entrega:</label>
+                                <select id="input-departamento" name="nombreDepartamento" required>
+                                    <option>Cortés</option>
+                                    <option>Francisco Morazán</option>
+                                    <option>Comayagua</option>
+                                    <option>Choluteca</option>
+                                    <option>Olancho</option>
+                                </select>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="input-condiciones" name="terminosCondiciones" required>
+                                <label>Acepto los términos y condiciones de la garantía</label>
+                            </div>
+                            <div>
+                                <button type="button">Enviar cotización</button>
+                            </div>
+                            <div>
+                                <button type="button">Limpiar formulario</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
         </main>
 
         <footer>
@@ -250,5 +396,6 @@
             </div>
         </footer>
 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     </body>
 </html>
